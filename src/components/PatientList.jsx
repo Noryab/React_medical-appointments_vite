@@ -7,7 +7,7 @@ function PatientList({patients, setPatient, patientDelete}) {
     return (
 
 
-        <div className="md:w-1/2 lg:w-3/5 text-center md:h-screen md:overflow-y-scroll">
+        <div className="md:w-1/2 lg:w-3/5 text-center md:h-screen overflow-y-auto">
 
             { patients && patients.length ? (
                 <>
