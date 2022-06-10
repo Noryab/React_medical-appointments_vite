@@ -33,11 +33,9 @@ const ApplicationForm = ({patients, setPatients, patient, setPatient}) => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if ([name, owner, email, dischargeDate, symptom].includes("")){
-            console.log("Any empty field")
+        if ([name, owner, email, dischargeDate, symptom].includes("")){            
             setError(true)
-        }else{
-            console.log("Sending Application Form")
+        }else{            
             setError(false)
 
             const objPatient = {
